@@ -6,14 +6,18 @@ console.log(name)
 //console.log(i);}
 //fizz al posto dei numeri multipli di 3 e buzz a quelli di 5
 for(let i = 0; i <=100; i++){
-    if(i % 3 === 0){
-        console.log("fizz");
-    }
-    if(i % 5 === 0){
-        console.log("buzz")
-    } 
-    else{
-        console.log(i);
-    }
-    }
+   const num = i+1
+   let message = ''+num
+   const mul3 = num % 3 ===0
+   const mul5 = num % 5 ===0
+   if (mul3 && mul5){
+    message= "FIZZBUZZ"
+   } else if (mul5){
+    message= "BUZZ"
+   } else if (mul3){
+    message="FIZZ"
+   } 
+   console.log(message)
+ }
+    
     
